@@ -24,5 +24,10 @@ subVec2 :: Vector2 -> Vector2 -> Vector2
 subVec2 (Vector2 x1 y1) (Vector2 x2 y2) =
     Vector2 (x1 - x2) (y1 - y2)
 
+
+eqVec2 :: Vector2 -> Vector2 -> Boolean
+eqVec2 (Vector2 x1 y1) (Vector2 x2 y2) =
+    x1 == x2 && y1 == y2
+
 --infixr 5 addVec2 as +
 --infixr 5 subVec2 as -
